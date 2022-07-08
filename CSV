@@ -1,0 +1,55 @@
+[
+   {
+      "colour": "#b1adad",
+      "name": "MERCURY",
+      "radius": 1.3,
+      "size": 1.8
+   },
+   {
+      "colour": "#e7d520",
+      "name": "VENUS",
+      "radius": 0.7,
+      "size": 1.6
+   },
+   {
+      "colour": "#6b93d6",
+      "name": "EARTH",
+      "radius": 1.6,
+      "size": 1.3
+   },
+   {
+      "colour": "#c1440e",
+      "name": "MARS",
+      "radius": 1.5,
+      "size": 1.1
+   },
+   {
+      "colour": "#d8ca9d",
+      "name": "JUPITER",
+      "radius": 1.1,
+      "size": 0.10
+   },
+   {
+      "colour": "#ceb8b8",
+      "name": "SATURN",
+      "radius": 0.4,
+      "size": 0.8
+   },
+   {
+      "colour": "#93cdf1",
+      "name": "URANUS",
+      "radius": 0.8,
+      "size": 0.7
+   },
+   {
+      "colour": "#5b5ddf",
+      "name": "NEPTUNE",
+      "radius": 1.3,
+      "size": 0.6 
+   },
+   {
+      "colour": "#fff1d5",
+      "name": "PLUTO",
+      "radius": 1.6,
+      "size": 0.5
+]
