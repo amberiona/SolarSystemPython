@@ -1,0 +1,22 @@
+Sub CreatePowerPoint()
+    Dim PPApp As PowerPoint.Application
+    Dim PPPresentation As PowerPoint.Presentation
+    Dim PPSlide As PowerPoint.Slide
+    Dim PPShape As PowerPoint.Shape
+       
+    Set PPApp = New PowerPoint.Application
+    PPApp.Visible = msoCTrue
+    PPApp.WindowState = ppWindowMaximized
+   
+    Set PPPresentation = PPApp.Presentations.Add
+   
+    Set PPSlide = PPPresentation.Slides.Add(1, ppLayoutTitleOnly)
+    PPSlide.Shapes(1).TextFrame.TextRange.Text = "Powerpoint Demo"
+   
+    For i = 1 To 5
+        PPApp.ActivePresentation.Slides.Add PPApp.ActivePresentation.Slides.Count + 1, ppLayoutText
+        Set PPSlide = PPApp.ActivePresentation.Slides(PPApp.ActivePresentation.Slides.Count)
+        PPSlide.Shapes(1).TextFrame.TextRange.Text = Cells(i + 3, 5).Value
+        PPSlide.Shapes(2).TextFrame.TextRange.Text = Cells(i + 3, 6).Value
+    Next i
+End Sub
